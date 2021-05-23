@@ -1,0 +1,60 @@
+.chapters {
+  
+  
+  &__div {
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  &__image {
+    width: 100vw;
+    margin: 48px auto;
+  }
+
+  &__exit {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $faded;
+    transition: color 1s;
+    font-family: Helvetica Neue;
+    font-weight: 100;
+    font-size: 3em;
+    background: none;
+    bottom: 50vh;
+  
+    @include fourk {
+      font-size: 5em;
+    }
+  
+    &:hover {
+      color: $text;
+    }
+  }
+
+
+}
+
+
+@include tablet {
+
+  .chapters {
+  
+    &__div {
+
+      display: none;
+      // width: 100vw;
+      // display: flex;
+      // flex-flow: column nowrap;
+    }
+  
+    // &__image {
+    //   max-width: 80vw;
+    // }
+  
+  }
+  
+
+}

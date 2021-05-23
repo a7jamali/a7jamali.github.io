@@ -1,0 +1,173 @@
+.faded {
+  color: $faded;
+  transition: color 1.5s .5s;
+
+  &:hover {
+    color: $faded !important;
+  }
+
+}
+
+.nav {
+
+  height: 100vh;
+  height: var(--app-height);
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  border-radius: 1px;
+  box-shadow: 0 10px 2px rgb(175,175,175);
+
+
+
+  &__body {
+    width: 100vw;
+    height: 100vh;
+    height: var(--app-height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100%;
+    margin-top: 10vh;
+    
+
+  }
+
+  &__logo {
+
+    margin-top: 16px;
+    margin-bottom: 40px;
+
+
+  }
+
+  &__item {
+    font-weight: 300;
+    max-height: 100%;
+
+
+    &-social {
+      margin-bottom: 16px;
+      margin-top:auto;
+    }
+    
+  }
+
+  &__dropdown {
+
+    &__container {
+      display: none;
+      flex-flow: column nowrap;
+      opacity: 1;
+
+
+      
+
+
+    }
+
+    &__button {
+      font-weight: 300;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+
+
+
+
+
+
+
+
+
+      &.active {
+        font-weight: 300;
+        margin-bottom: 12px;
+        -webkit-tap-highlight-color: transparent;
+        color: $text !important;
+        transition: all 1.5s .2s linear, color .5s;
+
+
+        
+      }
+    }
+
+    &__item {
+      font-weight: 200;
+      margin-bottom: 4px;
+
+
+    }
+  }
+}
+
+@include tablet {
+  .nav {
+
+    display: flex;
+    flex-flow: column nowrap;
+    border-radius: 1px;
+    box-shadow: 0 10px 2px rgb(175,175,175);
+    overflow: auto;
+
+    &__logo {
+      margin-top: -8px;
+      margin-bottom: 24px;
+    }
+
+    &__list {
+      align-items: center;
+      padding: 15vh 15vh 0;
+      margin: 0;
+
+    }
+    
+  
+  
+  
+    &__body {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+
+    }
+
+    // &__dropdown__button, &__item {
+
+    // }
+
+    &__list {
+      height: 100%;
+      display: flex;
+      flex-flow: column nowrap;
+  
+    }
+  }
+
+}
+
+
+@include monitor {
+  .nav {
+
+
+    &__list {
+      align-items: center;
+    }
+
+
+
+  }
+
+
+}
+

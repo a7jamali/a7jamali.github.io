@@ -1,0 +1,93 @@
+.navtext {
+
+  &__logo {
+    font-size: 2em;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    user-select: none;
+    transition: color 1.5s .5s;
+
+
+
+  }
+
+  &__nav {
+    font-size: 2em;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    transition: color 1.5s .5s;
+
+
+
+    &-drop{
+      font-size: 1.6em;
+      letter-spacing: 8px;
+
+    }
+  }
+
+  &__disclaimer {
+    font-size: .5em;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    user-select: none;
+    transition: color 1.5s .5s;
+
+
+
+  }
+
+  &__social {
+    font-size: .5em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: color 1.5s .5s;
+
+
+
+  }
+
+
+}
+
+@include tablet {
+
+  .navtext {
+
+    &__logo {
+      font-size: 2em;
+    }
+  
+    &__nav {
+      font-size: 2em;
+    }
+  
+  
+
+  
+  }
+
+}
+
+@include monitor {
+
+  .navtext {
+
+    &__logo {
+      font-size: 2.5em;
+    }
+  
+    &__nav {
+      font-size: 2em;
+    }
+
+
+  
+  
+  }
+
+}
+
+#dot {
+  user-select: none;
+}

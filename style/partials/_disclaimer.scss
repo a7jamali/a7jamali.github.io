@@ -1,0 +1,141 @@
+.disclaimer, .disclaimer__scroll {
+  font-size: 5pt;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  user-select: none;
+  top: auto;
+  bottom: 28px;
+  position: fixed;
+  text-align: center;
+  z-index: 1;
+  background: none;
+  letter-spacing: 1px;
+  width: 100vw;
+  user-select: none;
+  color: $faded;
+  cursor: default;
+  padding-bottom: 4px;
+
+
+
+  @include fourk {
+    font-size: 1em;
+  }
+
+
+}
+
+.disclaimer {
+
+  @include mobile {
+    bottom: 56px;
+  }
+}
+
+.disclaimer__scroll {
+  bottom: 0;
+  padding-bottom: 4px;
+  background: $background;
+
+  @include tablet {
+    bottom: 56px;
+
+  }
+
+
+}
+
+
+
+
+  .scroll {
+
+
+    &__exit {
+      color: $faded;
+      transition: color 1s;
+      font-family: Helvetica Neue;
+      font-weight: 100;
+      font-size: 3em;
+      background: none;
+    
+      @include tablet {
+        display: none;
+      }
+    
+      &:hover {
+        color: $text;
+      }
+    }
+  
+
+    //disclaimer
+    &__disclaimer {
+    font-size: 5pt;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    user-select: none;
+    text-align: center;
+    letter-spacing: 1px;
+    user-select: none;
+    color: $faded;
+    cursor: default;
+    padding-bottom: 4px;
+
+      @include fourk {
+        font-size: 1em;
+      }
+    }
+    //disclaimer end
+
+
+    //div
+    &__div {
+      bottom: 0;
+      top: auto;
+      position: fixed;
+      z-index: 1;
+      background: $background;
+      width: 100vw;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      align-items: center;
+
+      @include tablet {
+        bottom: 30px;
+  
+      }
+
+    }
+    //div end
+
+
+    //chapter
+    &__title {
+      text-transform: uppercase;
+      color: $faded;
+      font-weight: 100;
+      font-size: .9em;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+
+      @include fourk {
+        font-size: 1.2em;
+      }
+  
+
+    }
+
+
+
+  }
+
+  #disclaimer-doors {
+    background: transparent;
+  }
+
+  #disclaimer-contact {
+    background: transparent;
+    color: $faded;
+  }

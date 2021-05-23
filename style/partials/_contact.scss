@@ -1,0 +1,131 @@
+.contact {
+
+    &__body {
+        background: url(../../assets/backgrounds/doors-mobile.jpg) center center fixed, $background-le-bottom;
+        background-repeat: no-repeat, repeat;
+        background-position: center bottom 10vh;
+        background-size: cover;
+        overflow: hidden;
+
+        @include tablet {
+            background: url(../../assets/backgrounds/doors-monitor.jpg) no-repeat center center fixed;
+            background-size: cover;
+    
+
+        }
+    }
+
+    &__div {
+        width: 100vw;
+        height: 100vh;
+        height: var(--app-height);
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding-top: 5vh;
+
+        @include tablet {
+            padding-top: 7.5vh;
+        }
+    }
+
+    &__wrapper {
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: 400;
+        font-size: 1em;
+
+    }
+
+    &__info {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-size: 0.7em;
+    }
+
+    &__telephone {
+        text-align: center;
+        letter-spacing: 4px;
+        transition: color 1.5s .5s;
+        font-size: 0.7em;
+
+
+        &:hover {
+          color: black;
+          transition: color 1s;
+        }
+
+    }
+
+    &__email {
+        text-align: center;
+        letter-spacing: 2px;
+        transition: color 1.5s .5s;
+        font-size: 0.7em;
+
+
+        &:hover {
+          color: silver;
+          transition: color 1s;
+        }
+
+    }
+}
+
+@include mobile {
+    .contact {
+
+
+
+        &__title {
+            font-size: 1.5em;
+        }
+        &__info {
+            font-size: 1em;
+        }
+        &__telephone {
+            font-size: 1em;
+        }
+        &__email {
+            font-size: 1em;
+
+        }
+    }
+}
+
+@include fourk {
+    .contact {
+
+        &__div {
+            padding-top: 15vh;
+        }
+
+
+        &__title {
+            font-size: 3.3em;
+        }
+        &__info {
+            font-size: 2.25em;
+        }
+        &__telephone {
+            font-size: 2.25em;
+        }
+        &__email {
+            font-size: 2.25em;
+
+        }
+    }
+}
+
+#info {
+    margin-top: -50px;
+}

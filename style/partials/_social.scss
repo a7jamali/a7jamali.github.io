@@ -1,0 +1,36 @@
+.social {
+
+  &__div {
+    margin-bottom: 4px;
+    margin-top: auto;
+
+    @include tablet {
+      margin-bottom: 60px;
+      margin-top: auto;
+
+    }
+    
+  }
+
+  &__disclaimer {
+    letter-spacing: 1px;
+
+  }
+
+  &__roster {
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+
+
+  &__icon {
+    max-height: 16px;
+  }
+
+
+
+}

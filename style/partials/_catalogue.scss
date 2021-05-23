@@ -1,0 +1,63 @@
+.catalogue {
+
+  &__gallery {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30vh;
+  }
+
+  &__cell {
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 90vw;
+    margin: 1vw 2vw;
+
+  }
+
+  &__wrapper {
+
+    overflow: hidden;
+  }
+
+  &__video {
+    width: 100%;
+  }
+
+}
+
+@include tablet {
+  .catalogue {
+
+    &__gallery {
+      flex-flow: row wrap;
+      padding-bottom: 0;
+
+
+    }
+
+    &__cell {
+      width: 20vw;
+
+
+    }
+
+    &__wrapper {
+      width: 20vw;
+      height: 11.25vw;
+    }
+
+  }
+}
+
+@include fourk {
+  .catalogue {
+    &__caption {
+      font-size: 2.5em;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.bio {
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 20px;
+  border-radius: 1px;
+  box-shadow: 0 10px 2px rgb(175,175,175);
+
+  &__body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__text {
+    padding: 15% 5% 0 5%;
+    text-align: justify;
+
+
+  }
+
+}
+
+@include tablet {
+  .bio {
+
+    height: 60vh;
+    width: 50vw;
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: 20px;
+    border-radius: 1px;
+    box-shadow: 0 10px 2px rgb(175,175,175);
+    overflow: auto;
+  
+    &__body {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+  }
+}
+
+
+@include monitor {
+  .bio {
+
+    width: 25vw;
+
+    &__text {
+      font-size: 0.8em;
+  
+      
+    }
+  }
+}
+

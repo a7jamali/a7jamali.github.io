@@ -1,0 +1,56 @@
+@import "./partials/breakpoints";
+@import "./partials/colors";
+@import "./partials/fonts";
+@import "./partials/navtext";
+@import "./partials/exit";
+@import "./partials/disclaimer";
+@import "./partials/standby";
+@import "./partials/landing";
+@import "./partials/nav";
+@import "./partials/movie";
+@import "./partials/rotate";
+@import "./partials/chapters";
+@import "./partials/carrousel";
+@import "./partials/bio";
+@import "./partials/social";
+@import "./partials/catalogue";
+@import "./partials/statement";
+@import "./partials/contact";
+@import "./partials/limited";
+@import "./partials/exile";
+
+
+
+
+* {
+  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: myriad-pro;
+  text-decoration: none;
+  color: $text;
+  border-color: transparent;
+  outline: none;
+  background: $background-solid;
+
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+:root {
+  --app-height: 100%;
+}
+
+
+
+html, body {
+  background: $background repeat;
+  height: 100vh;
+  height: var(--app-height);
+
+  //background: red;
+}

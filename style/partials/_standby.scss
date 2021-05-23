@@ -1,0 +1,74 @@
+.standby {
+
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 20px;
+
+
+
+  &__body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__list {
+    padding: 5%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+    
+
+  }
+
+  &__item {
+    font-size: 1.5em;
+    font-weight: 300;
+    max-height: 100%;
+    text-align: center;
+
+
+
+    
+  }
+}
+
+@include tablet {
+  .standby {
+
+    height: 60vh;
+    width: 60vw;
+    border-radius: 1px;
+    box-shadow: 0 10px 2px rgb(175,175,175);
+    overflow: auto;
+    
+  
+  
+  }
+
+}
+
+
+@include monitor {
+  .standby {
+
+    width: 33.33vw;
+
+    &__item {
+      font-size: 1.5em;
+  
+      
+    }
+
+
+  }
+
+
+}
+

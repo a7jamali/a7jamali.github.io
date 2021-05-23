@@ -1,0 +1,151 @@
+.statement {
+
+  &__body {
+    overflow: hidden;
+  }
+
+  &__div {
+    width: 100vw;
+    height: 100vh;
+    height: var(--app-height);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    
+  }
+
+  &__exit {
+    color: $faded;
+    transition: color 1s;
+    font-family: Helvetica Neue;
+    font-weight: 100;
+    font-size: 3em;
+    background: none;
+  
+    @include fourk {
+      font-size: 5em;
+    }
+  
+    &:hover {
+      color: $text;
+    }
+  }
+
+  &__wrapper {
+    //margin-top: -7.5vh;
+    width: 90%;
+    height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+
+    &::-webkit-scrollbar {
+      width: 1px;
+
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $faded;
+      //border-left: 9px $background-solid solid;
+      left: 10px;
+
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $text;
+      left: 10px;
+
+      //border-left: 9px $background-solid solid;
+
+
+      transition: color .5s .5s;
+
+
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background: silver;
+      transition: color .5s .5s;
+
+    }
+
+
+
+    
+
+    // background-image: linear-gradient(to top, $background-solid, $background-solid),
+    // linear-gradient(to top, $background-solid, $background-solid),
+    // linear-gradient(to top, rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0)),
+    // linear-gradient(to bottom, rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0));
+    // background-position: bottom center, top center, bottom center, top center;
+    // background-color: $background-solid;
+    // background-repeat: no-repeat;
+    // background-size: 100% 20px, 100% 20px, 100% 20px, 100% 20px;
+    // background-attachment: local, local, scroll, scroll;
+
+
+
+    
+    
+  }
+
+  &__header {
+    user-select: none;
+  }
+
+  &__text {
+    text-align: justify;
+    user-select: none;
+    width: 98%;
+    font-size: 1em;
+    
+
+  }
+
+  &__collab {
+    font-size: 0.9em;
+    user-select: none;
+    font-weight: 900;
+  }
+
+  &__names {
+    user-select: none;
+    font-size: 0.666em;
+    letter-spacing: 1px;  
+    text-align: justify;
+    width: 98%;
+
+  }
+
+
+
+}
+
+@include tablet {
+  .statement {
+    &__wrapper {
+      margin-top: 0;
+      height: 50%;
+      width: 60%;
+    }
+
+    &__exit {
+      bottom: 96px;
+    }
+  }
+}
+
+@include fourk {
+  .statement {
+    &__header {
+      font-size: 2em;
+
+    }
+
+    &__text {
+      font-size: 1.5em;
+    }
+  }
+}

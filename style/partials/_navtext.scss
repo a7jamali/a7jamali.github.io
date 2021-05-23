@@ -1,0 +1,206 @@
+.navtext {
+
+  &__logo {
+    font-size: 12pt;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    user-select: none;
+    transition: color 1.5s .5s;
+
+    @include mobile {
+      font-size: 1.5em;
+    }
+
+
+
+
+  }
+
+  &__nav {
+    font-size: 12pt;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    transition: color 1.5s .5s;
+
+    @include mobile {
+      font-size: 1.5em;
+    }
+
+
+    &:hover {
+      color: silver;
+      transition: color 1.5s .5s;
+    }
+
+
+
+
+    &-drop{
+      text-transform: uppercase;
+      font-size: 10pt;
+      letter-spacing: 0.1em;
+        transition: color 1s .5s;
+
+        @include mobile {
+          font-size: 1.25em;
+        }
+    
+
+
+      &:hover {
+        color: silver;
+        transition: all 1s .5s;
+        text-decoration: line-through 2px silver;
+
+      }
+  
+
+    }
+
+
+    
+  }
+
+  &__return {
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: 0.0875em;
+    margin-top: 20px;
+    transition: color 1s .5s;
+
+    @include mobile {
+      margin-top: 40px;
+      font-size: .8em;
+
+
+
+    }
+
+
+    &:hover {
+      color: silver;
+      transition: color 1s .5s;
+    }
+
+  }
+
+
+  &__disclaimer {
+    font-size: 4pt;
+    letter-spacing: 0.175em;
+    text-transform: uppercase;
+    user-select: none;
+    transition: color 1.5s .5s;
+
+    @include mobile {
+      font-size: 5pt;
+    }
+
+
+  }
+
+  &__social {
+    font-size: 4pt;
+    letter-spacing: 0.0875em;
+    text-transform: uppercase;
+    transition: color 1.5s .5s;
+
+    @include mobile {
+      font-size: 5pt;
+    }
+
+
+    &:hover {
+      color: silver;
+      transition: color 1s;
+    }
+
+
+
+
+  }
+
+
+}
+
+
+@include tablet {
+
+  .navtext {
+
+    &__logo {
+      font-size: 2em;
+    }
+  
+    &__nav {
+      font-size: 2em;
+    }
+
+    &__disclaimer {
+      font-size: .6em;
+    }
+
+    &__social {
+      font-size: .6em;
+    }
+  
+  
+
+  
+  }
+
+}
+
+@include monitor {
+
+  .navtext {
+
+    &__logo {
+      font-size: 2.5em;
+    }
+  
+    &__nav {
+      font-size: 2em;
+    }
+
+
+  
+  
+  }
+
+}
+
+@include fourk {
+  .navtext {
+    &__logo {
+      font-size: 5em;
+    }
+
+    &__nav {
+      font-size: 3em;
+    }
+
+    &__nav-drop {
+      font-size: 2.5em;
+    }
+
+    &__return {
+      font-size: 2em;
+    }
+    &__disclaimer {
+      font-size: 1em;
+    }
+    &__social {
+      font-size: 1em;
+
+    }
+  }
+}
+
+#dot {
+  user-select: none;
+
+  &:hover {
+    color: $text;
+  }
+}
