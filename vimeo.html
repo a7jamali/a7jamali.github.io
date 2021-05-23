@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,  maximum-scale=1.0">
+  <link rel="stylesheet" href="./style/main.css">
+  <style> * {background: rgb(35, 35, 35); overflow: hidden;} </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <link rel="icon" href="./assets/icons/rahi.jpeg" type="image/x-icon" sizes="any">
+
+  <title>Rahi</title>
+</head>
+<body>
+  <div class="landing">
+    <div class="video__wrapper">
+
+        <div class="video__content"><iframe class="video__content-iframe" src="https://player.vimeo.com/video/437866404?background=1" frameborder="0"></iframe></div>
+
+      <form class="video__form" action="./pages/navigation.html">
+        <button class="video__button" type="submit" style="cursor: pointer;">Click Me!</button>
+      </form>
+
+      
+
+    </div>
+
+    <div class="playlist__wrapper">
+      <div class="playlist__cutter">
+
+        <iframe class="playlist__button" 
+        width="100" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1244851843&color=%23ff5500&auto_play=true&hide_related=false&show_comments=false&show_user=false&show_reposts=false&show_teaser=false&visual=true">
+      </iframe>
+
+
+        
+
+    <!-- <iframe class="playlist__button" 
+    src="https://open.spotify.com/embed/playlist/4uHLtHtXf1cuDuoIbBNXPc" 
+    width="80" height="80" frameborder="0" allowtransparency="true" 
+    allow="encrypted-media"></iframe> -->
+
+  </div>
+    </div>
+    
+  </div>
+
+  
+
+  <div class="rotate-to-portrait__wrapper">
+    <img class="rotate-to-portrait__icon" src="./assets/icons/rotate-to-portrait.png" alt="Please Rotate Your Phone">
+  </div>
+
+  <p class="landing__disclaimer">All work is protected by copyright. © Rahi Rezvani Studio 2021.</p>
+
+  <script>
+    $(document).ready(function() {
+    $('body').hide().stop().fadeIn(1000);
+    $("a").click(function(e) {
+        e.preventDefault();
+        $link = $(this).attr("href");
+        $("body").fadeOut(1000,function(){
+          window.location =  $link; 
+        });
+    });
+  });
+  </script>
+  
+  <script src="../scripts/appHeight.js"></script>
+
+
+</body>
+</html>

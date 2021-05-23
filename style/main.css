@@ -473,6 +473,11 @@
   position: absolute;
 }
 
+.video__content-iframe {
+  height: 100%;
+  width: 100%;
+}
+
 .video__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
