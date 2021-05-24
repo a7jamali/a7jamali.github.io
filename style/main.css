@@ -1809,4 +1809,10 @@
 :root {
   --app-height: 100%;
 }
+
+html, body {
+  background: url(../../assets/backgrounds/grain.png) repeat;
+  height: 100vh;
+  height: var(--app-height);
+}
 /*# sourceMappingURL=main.css.map */
