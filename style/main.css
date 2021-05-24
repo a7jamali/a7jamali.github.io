@@ -1,16 +1,4 @@
 @import url("https://use.typekit.net/yyo8qoj.css");
-.background {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 500vw;
-  height: 500vh;
-  background-color: red;
-  z-index: -999;
-}
-
 .navtext__logo {
   font-size: 12pt;
   letter-spacing: 0.15em;
@@ -1352,7 +1340,6 @@
 
 .statement__body {
   overflow: hidden;
-  background-color: red;
 }
 
 .statement__div {
