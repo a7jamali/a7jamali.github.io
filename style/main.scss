@@ -1,5 +1,6 @@
 @import "./partials/breakpoints";
 @import "./partials/colors";
+@import "./partials/background";
 @import "./partials/fonts";
 @import "./partials/navtext";
 @import "./partials/exit";
@@ -47,10 +48,10 @@
 
 
 
-html, body {
-  background: $background repeat;
-  height: 100vh;
-  height: var(--app-height);
+// html, body {
+//   background: $background repeat;
+//   height: 100vh;
+//   height: var(--app-height);
 
-  //background: red;
-}
+//   //background: red;
+// }
