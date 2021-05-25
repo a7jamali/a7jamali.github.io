@@ -1735,7 +1735,6 @@
 
 .exile__div {
   width: 100vw;
-  width: var(--app-width);
   height: 100vh;
   height: var(--app-height);
   display: -webkit-box;
@@ -1813,14 +1812,11 @@
 
 :root {
   --app-height: 100%;
-  --app-width: 100%;
 }
 
 html, body {
   background: url(../../assets/backgrounds/grain.png) repeat;
   height: 100vh;
   height: var(--app-height);
-  width: 100vw;
-  width: var(--app-width);
 }
 /*# sourceMappingURL=main.css.map */

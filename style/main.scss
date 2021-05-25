@@ -44,7 +44,7 @@
 
 :root {
   --app-height: 100%;
-  --app-width: 100%;
+  // --app-width: 100%;
 
 }
 
@@ -55,8 +55,8 @@ html, body {
   height: 100vh;
   height: var(--app-height);
 
-  width: 100vw;
-  width: var(--app-width);
+  // width: 100vw;
+  // width: var(--app-width);
 
 
   //background: red;
