@@ -9,13 +9,15 @@
 
   display: flex;
   flex-flow: column nowrap;
+  width: 100vw;
+  height: 100vh;
+  height: var(--app-height);
+
 
   &__disclaimer {
     position: fixed;
     height: 2.5%;
     width: 100vw;
-    height: 100vh;
-    height: var(--app-height);
     bottom: 0;
     text-align: center;
     display: flex;
