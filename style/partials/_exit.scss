@@ -9,6 +9,7 @@
   font-size: 3em;
   background: none;
   bottom: 48px;
+  z-index: 1;
 
   @include mobile {
     bottom: 96px;

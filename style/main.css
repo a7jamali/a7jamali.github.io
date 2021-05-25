@@ -175,6 +175,18 @@
   color: #474747;
 }
 
+.background {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 80%);
+          transform: translate(-50%, 80%);
+  width: 100vw;
+  height: 50vh;
+  z-index: -1;
+  background-color: red;
+}
+
 .exit {
   position: fixed;
   left: 50%;
@@ -188,6 +200,7 @@
   font-size: 3em;
   background: none;
   bottom: 48px;
+  z-index: 1;
 }
 
 @media only screen and (min-height: 600px) {
