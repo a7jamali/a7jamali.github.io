@@ -181,10 +181,10 @@
   left: 50%;
   -webkit-transform: translate(-50%, 80%);
           transform: translate(-50%, 80%);
-  width: 100vw;
-  height: 50vh;
+  width: 1000vw;
+  height: 5000vh;
   z-index: -1;
-  background-color: red;
+  background-color: blue;
 }
 
 .exit {
