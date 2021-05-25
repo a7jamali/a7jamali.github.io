@@ -184,7 +184,7 @@
   width: 1000vw;
   height: 5000vh;
   z-index: -1;
-  background-color: red;
+  background-color: url(../../assets/backgrounds/grain.png);
 }
 
 .background__doors {
