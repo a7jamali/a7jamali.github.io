@@ -44,6 +44,8 @@
 
 :root {
   --app-height: 100%;
+  --app-width: 100%;
+
 }
 
 
@@ -52,6 +54,10 @@ html, body {
   background: $background repeat;
   height: 100vh;
   height: var(--app-height);
+
+  width: 100vh;
+  width: var(--app-width);
+
 
   //background: red;
 }

@@ -3,6 +3,7 @@
 
     &__div {
         width: 100vw;
+        width: var(--app-width);
         height: 100vh;
         height: var(--app-height);
         display: flex;
