@@ -612,22 +612,6 @@
   .landing {
     display: none;
   }
-  .rotate-to-portrait__wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100vw;
-    height: 80vh;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .rotate-to-portrait__icon {
-    width: 20vw;
-  }
 }
 
 @media only screen and (min-width: 750px) {
@@ -886,7 +870,8 @@
     display: -ms-flexbox;
     display: flex;
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
+    height: var(--app-height);
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;

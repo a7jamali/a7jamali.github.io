@@ -23,7 +23,8 @@
       &__wrapper {
         display: flex;
         width: 100vw;
-        height: 80vh;
+        height: 100vh;
+        height: var(--app-height);
         justify-content: center;
         align-items: center;
       }

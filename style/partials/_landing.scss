@@ -7,11 +7,14 @@
 .landing {
 
 
+
+
   display: flex;
   flex-flow: column nowrap;
   width: 100vw;
   height: 100vh;
   height: var(--app-height);
+  
 
 
   &__disclaimer {
@@ -167,19 +170,6 @@
     display: none;
   }
 
-  .rotate-to-portrait {
-    &__wrapper {
-      display: flex;
-      width: 100vw;
-      height: 80vh;
-      justify-content: center;
-      align-items: center;
-    }
-
-    &__icon {
-      width: 20vw;
-    }
-  }
 
 }
 
