@@ -175,7 +175,7 @@
   color: #474747;
 }
 
-.background, .background__doors {
+.background, .background__doors, .background__landing {
   position: fixed;
   bottom: 0;
   left: 50%;
@@ -189,6 +189,10 @@
 
 .background__doors {
   background-color: url(../../assets/backgrounds/le-mobile-downgrain.jpg);
+}
+
+.background__landing {
+  background-color: #232323;
 }
 
 .exit {
