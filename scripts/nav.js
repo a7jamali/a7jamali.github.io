@@ -106,6 +106,16 @@ $("#obsessions").click(function () {
   sessionStorage.setItem("stateContainerDisplay", $("#container-obsessions").css("display"));
 });
 
+$(document).ready(function () {
+  if (sessionStorage.getItem("stateLogoColor"))
+  {
+      $("#logo").css("color", sessionStorage.getItem("stateLogoColor"));
+  }
+});
+$("#obsessions").click(function () {
+  sessionStorage.setItem("stateLogoColor", $("#logo").css("color"));
+});
+
 // var el = $('#container-obsessions');
 // var style = el.css('display');
 
