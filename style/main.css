@@ -1795,4 +1795,11 @@ html, body {
   height: 100vh;
   height: var(--app-height);
 }
+
+.slick-disabled {
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 1500ms ease-in-out, opacity 1500ms ease-in-out;
+  transition: visibility 1500ms ease-in-out, opacity 1500ms ease-in-out;
+}
 /*# sourceMappingURL=main.css.map */

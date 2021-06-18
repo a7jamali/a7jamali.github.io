@@ -55,3 +55,10 @@ html, body {
 
   //background: red;
 }
+
+
+.slick-disabled {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 1500ms ease-in-out, opacity 1500ms ease-in-out;
+}
