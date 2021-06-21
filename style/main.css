@@ -200,7 +200,7 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  color: #ababab;
+  color: #474747;
   -webkit-transition: color 1s;
   transition: color 1s;
   font-family: Helvetica Neue;
@@ -224,7 +224,7 @@
 }
 
 .exit:hover {
-  color: #474747;
+  color: #ababab;
 }
 
 #edition-x {
@@ -1355,7 +1355,7 @@
 }
 
 .statement__exit {
-  color: #ababab;
+  color: #474747;
   -webkit-transition: color 1s;
   transition: color 1s;
   font-family: Helvetica Neue;
@@ -1371,7 +1371,7 @@
 }
 
 .statement__exit:hover {
-  color: #474747;
+  color: #ababab;
 }
 
 .statement__wrapper {
@@ -1434,7 +1434,7 @@
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-size: 0.666em;
+  font-size: 0.766em;
   letter-spacing: 1px;
   text-align: justify;
   width: 98%;

@@ -17,7 +17,8 @@
   }
 
   &__exit {
-    color: $faded;
+    //color: $faded;
+    color: $text;
     transition: color 1s;
     font-family: Helvetica Neue;
     font-weight: 100;
@@ -29,7 +30,8 @@
     }
   
     &:hover {
-      color: $text;
+      //color: $text;
+      color: $faded;
     }
   }
 
@@ -112,7 +114,7 @@
 
   &__names {
     user-select: none;
-    font-size: 0.666em;
+    font-size: 0.766em;
     letter-spacing: 1px;  
     text-align: justify;
     width: 98%;

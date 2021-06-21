@@ -2,7 +2,8 @@
   position: fixed;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: $faded;
+  //color: $faded;
+  color: $text;
   transition: color 1s;
   font-family: Helvetica Neue;
   font-weight: 100;
@@ -22,7 +23,8 @@
   }
 
   &:hover {
-    color: $text;
+    //color: $text;
+    color: $faded;
   }
 }
 
