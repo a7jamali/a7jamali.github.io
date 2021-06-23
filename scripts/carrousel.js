@@ -35,14 +35,14 @@ $('.slider-for').slick({
   keyboard: true,
 
   autoplay: false,
-  speed: 1500,
+  speed: 800,
   autoplaySpeed: 15000,
   asNavFor: '.slider-nav'
 });
 $('.slider-nav').slick({
   slidesToShow: 5,
   slidesToScroll: 1,
-  speed: 2000,
+  speed: 1600,
   asNavFor: '.slider-for',
   dots: false,
   infinite: false,
