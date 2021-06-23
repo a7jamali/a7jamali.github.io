@@ -35,7 +35,7 @@ $('.slider-for').slick({
   keyboard: true,
 
   autoplay: false,
-  speed: 600,
+  speed: 500,
   autoplaySpeed: 15000,
   asNavFor: '.slider-nav'
 });
